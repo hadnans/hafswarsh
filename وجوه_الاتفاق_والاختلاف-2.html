@@ -1,0 +1,2040 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>وجوه الاتفاق والاختلاف بين روايتي ورش وحفص</title>
+<link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Cairo:wght@300;400;600;700;900&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #1a5e3a;
+  --primary-light: #2d7a52;
+  --primary-pale: #e8f5ee;
+  --gold: #c8a84b;
+  --gold-light: #f5efd7;
+  --warsh: #1a5e3a;
+  --hafs: #1e3a6e;
+  --hafs-light: #e8eef8;
+  --text: #1a1a1a;
+  --text-muted: #555;
+  --border: #dde8e2;
+  --bg: #ffffff;
+  --bg-alt: #f7faf8;
+  --shadow: 0 2px 12px rgba(0,0,0,0.08);
+  --radius: 12px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Cairo', 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+/* ======= HEADER ======= */
+.site-header {
+  background: linear-gradient(135deg, #0f3d25 0%, #1a5e3a 50%, #0f3d25 100%);
+  color: white;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 3px 20px rgba(0,0,0,0.3);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  border-bottom: 1px solid rgba(200,168,75,0.3);
+}
+
+.header-title-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--gold);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.header-title { font-size: 17px; font-weight: 700; }
+.header-subtitle { font-size: 12px; opacity: 0.75; margin-top: 1px; }
+
+/* Search bar */
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 260px;
+}
+.search-wrapper input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: 'Cairo', sans-serif;
+  font-size: 14px;
+  padding: 8px 14px;
+  width: 100%;
+  direction: rtl;
+}
+.search-wrapper input::placeholder { color: rgba(255,255,255,0.5); }
+.search-wrapper button {
+  background: var(--gold);
+  border: none;
+  color: #1a1a1a;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Nav bar */
+.header-nav {
+  display: flex;
+  gap: 2px;
+  padding: 6px 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.header-nav::-webkit-scrollbar { display: none; }
+.nav-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,0.8);
+  font-family: 'Cairo', sans-serif;
+  font-size: 13px;
+  padding: 5px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+.nav-btn:hover, .nav-btn.active {
+  background: rgba(200,168,75,0.25);
+  color: white;
+}
+
+/* ======= LAYOUT ======= */
+.main-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: calc(100vh - 80px);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ======= SIDEBAR ======= */
+.sidebar {
+  background: var(--bg-alt);
+  border-left: 1px solid var(--border);
+  padding: 20px 0;
+  position: sticky;
+  top: 80px;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.sidebar-section { margin-bottom: 4px; }
+
+.sidebar-heading {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 0.5px;
+  padding: 10px 18px 5px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 7px 18px 7px 24px;
+  font-size: 13.5px;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-right: 3px solid transparent;
+  transition: all 0.2s;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: right;
+  font-family: 'Cairo', sans-serif;
+  line-height: 1.4;
+}
+.sidebar-link:hover {
+  background: var(--primary-pale);
+  color: var(--primary);
+  border-right-color: var(--primary);
+}
+.sidebar-link.active {
+  background: var(--primary-pale);
+  color: var(--primary);
+  font-weight: 700;
+  border-right-color: var(--primary);
+}
+
+.sidebar-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 8px 18px;
+}
+
+/* ======= CONTENT AREA ======= */
+.content {
+  padding: 30px 36px;
+  max-width: 900px;
+}
+
+/* Search highlight */
+.search-highlight { background: #ffe580; border-radius: 2px; }
+
+/* ======= SECTION ======= */
+.page-section {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+.page-section.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ======= HERO CARD ======= */
+.hero-card {
+  background: linear-gradient(135deg, #0f3d25, #1a5e3a);
+  color: white;
+  border-radius: var(--radius);
+  padding: 32px;
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-card::before {
+  content: '﴿ كِتَابٌ أَنزَلْنَاهُ إِلَيْكَ ﴾';
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  font-family: 'Scheherazade New', serif;
+  font-size: 60px;
+  opacity: 0.06;
+  pointer-events: none;
+}
+.hero-title {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.hero-sub {
+  font-size: 15px;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+.hero-badges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.badge {
+  background: rgba(200,168,75,0.25);
+  border: 1px solid rgba(200,168,75,0.5);
+  color: var(--gold);
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ======= SECTION TITLES ======= */
+.section-title {
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--primary);
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section-title .icon {
+  background: var(--primary-pale);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 18px;
+}
+
+.subsection-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 24px 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.subsection-title::before {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background: var(--gold);
+  border-radius: 2px;
+}
+
+/* ======= INFO CARDS ======= */
+.info-card {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+.info-card.gold-border { border-right: 4px solid var(--gold); }
+.info-card.green-border { border-right: 4px solid var(--primary); }
+.info-card p { margin-bottom: 8px; font-size: 15px; }
+.info-card p:last-child { margin-bottom: 0; }
+
+/* ======= NARRATOR CARDS ======= */
+.narrator-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px 0;
+}
+.narrator-card {
+  border-radius: var(--radius);
+  padding: 22px;
+  border: 1px solid;
+}
+.narrator-card.warsh-card {
+  background: var(--primary-pale);
+  border-color: var(--primary);
+}
+.narrator-card.hafs-card {
+  background: var(--hafs-light);
+  border-color: var(--hafs);
+}
+.narrator-name {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+  border-bottom-color: inherit;
+}
+.warsh-card .narrator-name { color: var(--warsh); }
+.hafs-card .narrator-name { color: var(--hafs); }
+
+.narrator-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  align-items: flex-start;
+  font-size: 14px;
+}
+.narrator-label {
+  font-weight: 700;
+  min-width: 70px;
+  color: var(--text-muted);
+}
+
+/* ======= ACCORDION ======= */
+.accordion { margin-bottom: 12px; }
+.accordion-btn {
+  width: 100%;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  text-align: right;
+  font-family: 'Cairo', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s;
+  box-shadow: var(--shadow);
+}
+.accordion-btn:hover {
+  background: var(--primary-pale);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.accordion-btn.open {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.accordion-arrow {
+  font-size: 12px;
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+.accordion-btn.open .accordion-arrow { transform: rotate(180deg); }
+.accordion-num {
+  background: var(--gold);
+  color: #1a1a1a;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 900;
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+.accordion-btn.open .accordion-num { background: rgba(255,255,255,0.25); color: white; }
+.accordion-content {
+  display: none;
+  border: 1px solid var(--primary);
+  border-top: none;
+  border-radius: 0 0 var(--radius) var(--radius);
+  padding: 22px;
+  background: white;
+  animation: slideDown 0.25s ease;
+}
+.accordion-content.open { display: block; }
+@keyframes slideDown { from { opacity: 0; max-height: 0; } to { opacity: 1; max-height: 2000px; } }
+
+/* ======= COMPARISON TABLE ======= */
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 14.5px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.compare-table th {
+  padding: 12px 16px;
+  font-weight: 700;
+  font-size: 15px;
+}
+.compare-table .th-topic {
+  background: #2d2d2d;
+  color: white;
+  width: 25%;
+}
+.compare-table .th-warsh {
+  background: var(--primary);
+  color: white;
+  width: 37.5%;
+}
+.compare-table .th-hafs {
+  background: var(--hafs);
+  color: white;
+  width: 37.5%;
+}
+.compare-table td {
+  padding: 11px 16px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+.compare-table tr:last-child td { border-bottom: none; }
+.compare-table tr:nth-child(even) td { background: #fafafa; }
+.compare-table .warsh-cell { color: var(--warsh); font-weight: 600; }
+.compare-table .hafs-cell { color: var(--hafs); font-weight: 600; }
+
+/* ======= QURAN VERSE BOX ======= */
+.ayah-box {
+  background: linear-gradient(135deg, #fffef8, #f9f4e8);
+  border: 1px solid #e8d89a;
+  border-right: 4px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin: 12px 0;
+  font-family: 'Scheherazade New', 'Amiri', serif;
+  font-size: 24px;
+  line-height: 2.2;
+  text-align: center;
+  color: #1a1a1a;
+  direction: rtl;
+}
+.ayah-ref {
+  font-family: 'Cairo', sans-serif;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 6px;
+  font-style: normal;
+}
+.ayah-small {
+  font-family: 'Scheherazade New', serif;
+  font-size: 20px;
+  background: linear-gradient(135deg, #fffef8, #f9f4e8);
+  border: 1px solid #e8d89a;
+  border-radius: 6px;
+  padding: 6px 14px;
+  display: inline-block;
+  margin: 4px 2px;
+}
+
+/* Reading comparison */
+.reading-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 10px 0;
+}
+.reading-box {
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+.reading-box.warsh-reading {
+  background: var(--primary-pale);
+  border: 1px solid #a8d4ba;
+}
+.reading-box.hafs-reading {
+  background: var(--hafs-light);
+  border: 1px solid #b0c4e0;
+}
+.reading-label {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.warsh-reading .reading-label { color: var(--warsh); }
+.hafs-reading .reading-label { color: var(--hafs); }
+.dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.warsh-dot { background: var(--warsh); }
+.hafs-dot { background: var(--hafs); }
+.reading-text {
+  font-family: 'Scheherazade New', serif;
+  font-size: 20px;
+  line-height: 1.9;
+  color: var(--text);
+}
+
+/* Diff item */
+.diff-item {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin: 10px 0;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+.diff-num {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+/* Surah header */
+.surah-header {
+  background: linear-gradient(90deg, var(--primary-pale), white);
+  border-right: 4px solid var(--primary);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.surah-num-badge {
+  background: var(--primary);
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+.surah-name { font-size: 18px; font-weight: 700; color: var(--primary); }
+
+/* definition box */
+.def-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 14px 0;
+}
+.def-card {
+  background: var(--bg-alt);
+  border-radius: 8px;
+  padding: 14px 16px;
+  border-top: 3px solid;
+}
+.def-card.lang { border-top-color: var(--gold); }
+.def-card.term { border-top-color: var(--primary); }
+.def-label { font-size: 11px; font-weight: 700; color: var(--text-muted); margin-bottom: 4px; }
+.def-text { font-size: 14.5px; }
+
+/* Tag */
+.tag {
+  display: inline-block;
+  background: var(--primary-pale);
+  color: var(--primary);
+  border-radius: 4px;
+  padding: 1px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 2px;
+}
+.tag.gold { background: var(--gold-light); color: #8a5e0a; }
+.tag.hafs-tag { background: var(--hafs-light); color: var(--hafs); }
+
+/* Rule box */
+.rule-box {
+  background: var(--gold-light);
+  border: 1px solid #dcc87a;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin: 12px 0;
+  font-size: 14.5px;
+}
+.rule-box strong { color: #7a5200; }
+
+/* Letter grid */
+.letter-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+.letter-box {
+  background: white;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-family: 'Scheherazade New', serif;
+  font-size: 22px;
+  text-align: center;
+  min-width: 50px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  transition: all 0.2s;
+}
+.letter-box:hover {
+  border-color: var(--gold);
+  background: var(--gold-light);
+  transform: translateY(-2px);
+}
+
+/* Summary table */
+.summary-section {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin: 16px 0;
+  box-shadow: var(--shadow);
+}
+.summary-header {
+  background: var(--primary);
+  color: white;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.summary-row {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr 1fr;
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+}
+.summary-row:last-child { border-bottom: none; }
+.summary-row .r-num {
+  background: var(--bg-alt);
+  text-align: center;
+  padding: 12px 6px;
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 700;
+  border-left: 1px solid var(--border);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.summary-row .r-topic {
+  padding: 12px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  border-left: 1px solid var(--border);
+}
+.summary-row .r-warsh {
+  padding: 12px 14px;
+  font-size: 13.5px;
+  color: var(--warsh);
+  border-left: 1px solid var(--border);
+}
+.summary-row .r-hafs {
+  padding: 12px 14px;
+  font-size: 13.5px;
+  color: var(--hafs);
+}
+
+/* note */
+.note { font-size: 13.5px; color: var(--text-muted); margin-top: 8px; padding-right: 12px; border-right: 2px solid var(--border); }
+
+/* Footer */
+.content-footer {
+  text-align: center;
+  padding: 30px;
+  color: var(--text-muted);
+  font-size: 13px;
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-layout { grid-template-columns: 1fr; }
+  .sidebar { display: none; }
+  .content { padding: 20px 16px; }
+  .narrator-grid { grid-template-columns: 1fr; }
+  .reading-row { grid-template-columns: 1fr; }
+  .def-box { grid-template-columns: 1fr; }
+  .header-top { flex-direction: column; gap: 10px; }
+  .search-wrapper { width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<!-- ======= HEADER ======= -->
+<header class="site-header">
+  <div class="header-top">
+    <div class="header-title-block">
+      <div class="header-icon">📖</div>
+      <div>
+        <div class="header-title">وجوه الاتفاق والاختلاف بين روايتي ورش وحفص</div>
+        <div class="header-subtitle">من طريق الطيبة — دليل تعليمي تفاعلي</div>
+      </div>
+    </div>
+    <div class="search-wrapper">
+      <input type="text" id="searchInput" placeholder="ابحث في الكتاب..." onkeyup="searchContent(event)" />
+      <button onclick="searchContent()">🔍</button>
+    </div>
+  </div>
+  <nav class="header-nav">
+    <button class="nav-btn active" onclick="showSection('intro', this)">الصفحة الرئيسية</button>
+    <button class="nav-btn" onclick="showSection('narrator', this)">التعريف بالروايتين</button>
+    <button class="nav-btn" onclick="showSection('qurra', this)">القراء العشرة</button>
+    <button class="nav-btn" onclick="showSection('usool', this)">الأصول (الفصل الثاني)</button>
+    <button class="nav-btn" onclick="showSection('furush', this)">الفروش (الفصل الثالث)</button>
+  </nav>
+</header>
+
+<!-- ======= LAYOUT ======= -->
+<div class="main-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-heading">الرئيسية</div>
+      <button class="sidebar-link active" onclick="showSection('intro', null, this)">نظرة عامة على الكتاب</button>
+    </div>
+
+    <div class="sidebar-divider"></div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-heading">التمهيد</div>
+      <button class="sidebar-link" onclick="showSection('narrator', null, this)">التعريف بالروايتين</button>
+      <button class="sidebar-link" onclick="showSection('qurra', null, this)">القراء العشرة ورواتهم</button>
+    </div>
+
+    <div class="sidebar-divider"></div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-heading">الفصل الثاني — الأصول</div>
+      <button class="sidebar-link" onclick="showSection('usool', null, this); openAccordion('acc-1')">١ · الاستعاذة والبسملة</button>
+      <button class="sidebar-link" onclick="showSection('usool', null, this); openAccordion('acc-2')">٢ · هاء الكناية</button>
+      <button class="sidebar-link" onclick="showSection('usool', null, this); openAccordion('acc-3')">٣ · الإظهار والإدغام</button>
+      <button class="sidebar-link" onclick="showSection('usool', null, this); openAccordion('acc-4')">٤ · المد والقصر</button>
+      <button class="sidebar-link" onclick="showSection('usool', null, this); openAccordion('acc-5')">٥ · أحكام الهمزات</button>
+      <button class="sidebar-link" onclick="showSection('usool', null, this); openAccordion('acc-6')">٦ · التفخيم والترقيق</button>
+      <button class="sidebar-link" onclick="showSection('usool', null, this); openAccordion('acc-7')">٧ · الفتح والإمالة</button>
+      <button class="sidebar-link" onclick="showSection('usool', null, this); openAccordion('acc-8')">٨ · الوقف والقطع والسكت</button>
+      <button class="sidebar-link" onclick="showSection('usool', null, this); openAccordion('acc-9')">٩ · ياءات الإضافة والزوائد</button>
+    </div>
+
+    <div class="sidebar-divider"></div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-heading">الفصل الثالث — الفروش</div>
+      <button class="sidebar-link" onclick="showSection('furush', null, this)">الفروق السورية (نظرة عامة)</button>
+      <button class="sidebar-link" onclick="showSection('furush', null, this); openAccordion('s-baqara')">البقرة</button>
+      <button class="sidebar-link" onclick="showSection('furush', null, this); openAccordion('s-al-imran')">آل عمران</button>
+      <button class="sidebar-link" onclick="showSection('furush', null, this); openAccordion('s-nisa')">النساء</button>
+      <button class="sidebar-link" onclick="showSection('furush', null, this); openAccordion('s-maida')">المائدة</button>
+      <button class="sidebar-link" onclick="showSection('furush', null, this); openAccordion('s-anam')">الأنعام</button>
+      <button class="sidebar-link" onclick="showSection('furush', null, this); openAccordion('s-araf')">الأعراف</button>
+    </div>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- ========= INTRO SECTION ========= -->
+    <section id="intro" class="page-section active">
+      <div class="hero-card">
+        <div class="hero-title">وجوه الاتفاق والاختلاف<br>بين روايتي ورش وحفص</div>
+        <div class="hero-sub">من طريق الطيبة — تأليف: الدكتور كامل بن يليبي</div>
+        <div class="hero-badges">
+          <span class="badge">📚 علم القراءات</span>
+          <span class="badge">🕌 رواية ورش ورواية حفص</span>
+          <span class="badge">📖 من طريق الطيبة</span>
+          <span class="badge">٢٧٥ صفحة</span>
+        </div>
+      </div>
+
+      <h2 class="section-title"><span class="icon">📋</span> عن الكتاب</h2>
+      <div class="info-card gold-border">
+        <p>هذا الكتاب أصله بحث علمي قُدِّم لنيل درجة الماجستير في القراءات من جامعة أم درمان الإسلامية (السودان) عام ١٤٣٤هـ، وقد نال صاحبه الدرجة بامتياز. ثم رأى المؤلف الحاجة إلى نشر بحثه في هيئة كتاب ليصل إلى أكبر قدر ممكن من طلاب العلم والمثقفين.</p>
+        <p>يتناول الكتاب وجوه الاتفاق والاختلاف بين روايتي <strong>ورش عن نافع</strong> و<strong>حفص عن عاصم</strong> من طريق الطيبة، وهاتان الروايتان هما الأكثر انتشاراً في العالم الإسلامي.</p>
+      </div>
+
+      <h2 class="section-title"><span class="icon">🗂️</span> هيكل الكتاب</h2>
+      <div class="summary-section">
+        <div class="summary-header">محتويات الكتاب الرئيسية</div>
+        <div class="summary-row">
+          <div class="r-num">١</div>
+          <div class="r-topic">التمهيد</div>
+          <div class="r-warsh" style="grid-column: span 2">التعريف بالراويين وطرقهم، وعرض القراء العشرة ورواتهم</div>
+        </div>
+        <div class="summary-row">
+          <div class="r-num">٢</div>
+          <div class="r-topic">الفصل الثاني — الأصول</div>
+          <div class="r-warsh" style="grid-column: span 2">تسعة مباحث في الأصول العامة التي تختلف فيها الروايتان</div>
+        </div>
+        <div class="summary-row">
+          <div class="r-num">٣</div>
+          <div class="r-topic">الفصل الثالث — الفروش</div>
+          <div class="r-warsh" style="grid-column: span 2">الفروق السورية المفصلة آية آية من سورة البقرة إلى آخر القرآن</div>
+        </div>
+      </div>
+
+      <h2 class="section-title"><span class="icon">⚖️</span> ورش وحفص: نظرة مقارنة سريعة</h2>
+      <div class="narrator-grid">
+        <div class="narrator-card warsh-card">
+          <div class="narrator-name">🟢 رواية ورش</div>
+          <div class="narrator-row"><span class="narrator-label">الاسم:</span> أبو سعيد عثمان بن سعيد المصري</div>
+          <div class="narrator-row"><span class="narrator-label">شيخه:</span> نافع المدني</div>
+          <div class="narrator-row"><span class="narrator-label">الوفاة:</span> ١٩٧هـ بمصر</div>
+          <div class="narrator-row"><span class="narrator-label">الانتشار:</span> المغرب والأندلس وأفريقيا</div>
+        </div>
+        <div class="narrator-card hafs-card">
+          <div class="narrator-name">🔵 رواية حفص</div>
+          <div class="narrator-row"><span class="narrator-label">الاسم:</span> أبو عمر حفص بن سليمان الأسدي</div>
+          <div class="narrator-row"><span class="narrator-label">شيخه:</span> عاصم الكوفي</div>
+          <div class="narrator-row"><span class="narrator-label">الوفاة:</span> ١٨٠هـ</div>
+          <div class="narrator-row"><span class="narrator-label">الانتشار:</span> معظم العالم الإسلامي اليوم</div>
+        </div>
+      </div>
+
+      <h2 class="section-title"><span class="icon">🔍</span> أبرز وجوه الاختلاف بين الروايتين</h2>
+      <table class="compare-table">
+        <tr>
+          <th class="th-topic">الموضوع</th>
+          <th class="th-warsh">ورش</th>
+          <th class="th-hafs">حفص</th>
+        </tr>
+        <tr>
+          <td>المد</td>
+          <td class="warsh-cell">البدل: يمده ٦ حركات (من طريق الأزرق)</td>
+          <td class="hafs-cell">البدل: يقصره ٢ حركات فقط</td>
+        </tr>
+        <tr>
+          <td>الراء</td>
+          <td class="warsh-cell">الإمالة الصغرى في مواضع كثيرة</td>
+          <td class="hafs-cell">الفتح في أغلب الحالات</td>
+        </tr>
+        <tr>
+          <td>الهمزات</td>
+          <td class="warsh-cell">نقل حركة الهمزة إلى الساكن قبلها (النقل)</td>
+          <td class="hafs-cell">تحقيق الهمزة في الغالب</td>
+        </tr>
+        <tr>
+          <td>ياءات الإضافة</td>
+          <td class="warsh-cell">فتحها في مواضع عديدة</td>
+          <td class="hafs-cell">إسكانها في الغالب</td>
+        </tr>
+        <tr>
+          <td>الإدغام</td>
+          <td class="warsh-cell">إدغام الذال في التاء في لفظ (أخذت)</td>
+          <td class="hafs-cell">إظهار الذال</td>
+        </tr>
+        <tr>
+          <td>السكت</td>
+          <td class="warsh-cell">لا سكت له أصلاً</td>
+          <td class="hafs-cell">السكت في أربعة مواضع معروفة</td>
+        </tr>
+        <tr>
+          <td>الاستعاذة</td>
+          <td class="warsh-cell">الجهر والإسرار حسب الحال</td>
+          <td class="hafs-cell">نفس الحكم</td>
+        </tr>
+      </table>
+
+      <div class="rule-box">
+        <strong>ملاحظة منهجية:</strong> الكتاب يقتصر على طريق <strong>الطيبة</strong> (طيبة النشر في القراءات العشر) للإمام ابن الجزري — وهو المرجع المعتمد في علم القراءات — دون سواها من الطرق.
+      </div>
+    </section>
+
+    <!-- ========= NARRATOR SECTION ========= -->
+    <section id="narrator" class="page-section">
+      <h1 class="section-title"><span class="icon">👤</span> التعريف بالراويين وطرقهما</h1>
+
+      <!-- WARSH -->
+      <h2 class="subsection-title">المبحث الأول: ورش وطرقه</h2>
+      <div class="info-card green-border">
+        <p><strong>الاسم الكامل:</strong> أبو سعيد عثمان بن سعيد بن عدي بن غزوان المصري</p>
+        <p><strong>لقبه:</strong> كان شيخه نافع يلقبه بـ"ورشان" يقول له: "اقرأ يا ورشان" ثم خُفِّف بحذف بعض الاسم فعُرف بـ"ورش"</p>
+        <p><strong>صفته:</strong> كان رحمه الله قصيراً سميناً أشقر أزرق العينين شديد البياض</p>
+        <p><strong>مولده:</strong> ولد بمصر سنة ١١٠هـ، وكان حسن الصوت بالقراءة لا يمله سامعه</p>
+        <p><strong>رحلته:</strong> رحل إلى المدينة المنورة ليقرأ على شيخه نافع، فقرأ عليه أربع ختمات سنة ١٥٥هـ، ثم رجع إلى مصر فانتهت إليه رئاسة الإقراء بها</p>
+        <p><strong>وفاته:</strong> توفي بمصر سنة ١٩٧هـ</p>
+      </div>
+
+      <h3 class="subsection-title">شيخه: نافع المدني</h3>
+      <div class="info-card gold-border">
+        <p><strong>الاسم:</strong> أبو رويم نافع بن عبد الرحمن بن أبي نعيم الليثي المدني</p>
+        <p><strong>مكانته:</strong> انتهت إليه رئاسة الإقراء بالمسجد النبوي بعد شيخه (أبو جعفر المدني) وتوفي بالمدينة سنة ١٦٩هـ</p>
+        <p><strong>راوياه في الطيبة:</strong> قالون ورش</p>
+      </div>
+
+      <h3 class="subsection-title">طرق ورش من طريق الطيبة</h3>
+      <div class="info-card">
+        <p>نُقلت رواية ورش عن طريقين اشتُهرا:</p>
+        <div class="reading-row">
+          <div class="reading-box warsh-reading">
+            <div class="reading-label"><span class="dot warsh-dot"></span> طريق الأزرق</div>
+            <div style="font-size:14px;">أبو يعقوب يوسف بن عمرو بن يسار (ت ٢٤٠هـ) — وهو الطريق المشهور المعتمد في المصاحف المطبوعة حالياً</div>
+          </div>
+          <div class="reading-box hafs-reading">
+            <div class="reading-label"><span class="dot hafs-dot"></span> طريق الأصبهاني</div>
+            <div style="font-size:14px;">ينفرد عن طريق الأزرق بعدم ترقيق الراءات وخلوه من الإمالات الصغرى، وعدم قصر المنفصل مطلقاً</div>
+          </div>
+        </div>
+        <div class="note">المصاحف الموجودة اليوم برواية ورش هي من طريق الأزرق فقط.</div>
+      </div>
+
+      <hr style="border:none; border-top:1px solid var(--border); margin: 28px 0;">
+
+      <!-- HAFS -->
+      <h2 class="subsection-title">المبحث الثاني: حفص وطرقه</h2>
+      <div class="info-card" style="border-right: 4px solid var(--hafs);">
+        <p><strong>الاسم الكامل:</strong> أبو عمر حفص بن سليمان بن المغيرة الأسدي الكوفي</p>
+        <p><strong>صلته بشيخه:</strong> كان حفص ربيبه (ابن زوجته) وهو أعلم أصحاب عاصم بقراءة عاصم</p>
+        <p>قال ابن الجزري: "كان حفص أعلم أصحاب عاصم بقراءة عاصم"</p>
+        <p><strong>مولده:</strong> ولد سنة ٩٠هـ وتوفي سنة ١٨٠هـ</p>
+        <p><strong>سند القراءة:</strong> ترتفع قراءة حفص عن عاصم عن أبي عبد الرحمن السُّلَمي عن علي بن أبي طالب ◙</p>
+      </div>
+
+      <h3 class="subsection-title">شيخه: عاصم الكوفي</h3>
+      <div class="info-card gold-border">
+        <p><strong>الاسم:</strong> عاصم بن بَهْدَلة أبي النَّجود الأسدي الكوفي</p>
+        <p><strong>مكانته:</strong> صار عاصم إماماً للقراءة بالكوفة بعد شيخه أبي عبد الرحمن السُّلَمي، وهو من التابعين، توفي سنة ١٢٨هـ</p>
+        <p><strong>راوياه:</strong> شعبة وحفص</p>
+      </div>
+
+      <h3 class="subsection-title">طرق حفص من طريق الطيبة</h3>
+      <div class="info-card">
+        <p>نُقلت رواية حفص عن طريقين:</p>
+        <div class="reading-row">
+          <div class="reading-box warsh-reading">
+            <div class="reading-label"><span class="dot warsh-dot"></span> طريق أبي الحسن الهاشمي</div>
+            <div style="font-size:14px;">عن الضرير — وهو الطريق الأشهر في المصاحف الحديثة</div>
+          </div>
+          <div class="reading-box hafs-reading">
+            <div class="reading-label"><span class="dot hafs-dot"></span> طريق عمرو بن الصباح</div>
+            <div style="font-size:14px;">نقل عنه من طريقين: طريق أبي الحسن النعمان الهاشمي، وطريق أبي جعفر أحمد بن حميد الفيل</div>
+          </div>
+        </div>
+        <div class="rule-box" style="margin-top:12px;">
+          <strong>سبب انتشار رواية حفص:</strong> لعل السبب أنها كانت رواية الدولة العثمانية، وحين اخترع الألمان المطبعة وكانوا يحكمون العالم الإسلامي آنذاك، فكانوا أول من طبع المصاحف بها.
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= QURRA SECTION ========= -->
+    <section id="qurra" class="page-section">
+      <h1 class="section-title"><span class="icon">📜</span> القراء العشرة ورواتهم</h1>
+
+      <div class="info-card gold-border">
+        <p>صنَّف الإمام ابن الجزري ♫ كتابه (النشر في القراءات العشر) ثم نظم مضمونه في ألفيته (طيبة النشر في القراءات العشر) التي عُرفت بالطيبة، وقد رتَّب القراءَ العشرة على النحو التالي:</p>
+      </div>
+
+      <div class="accordion" id="qurra-acc">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">١</div> نافع المدني وراوياه</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="narrator-row"><span class="narrator-label">الاسم:</span> أبو رويم نافع بن عبد الرحمن — توفي ١٦٩هـ بالمدينة</div>
+          <div class="reading-row">
+            <div class="reading-box warsh-reading">
+              <div class="reading-label"><span class="dot warsh-dot"></span> قالون</div>
+              عيسى بن مينا أبو موسى — ويُروى أن نافعاً لقَّبه قالون لجودة قراءته لأن قالون باللغة الرومية تعني "جيد" — توفي ٢٢٠هـ
+            </div>
+            <div class="reading-box hafs-reading">
+              <div class="reading-label"><span class="dot hafs-dot"></span> ورش</div>
+              أبو سعيد عثمان بن سعيد المصري — توفي ١٩٧هـ
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">٢</div> ابن كثير المكي وراوياه</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="narrator-row"><span class="narrator-label">الاسم:</span> أبو معبد عبد الله بن كثير — ولد بمكة ٤٥هـ وتوفي ١٢٠هـ</div>
+          <div class="reading-row">
+            <div class="reading-box warsh-reading">
+              <div class="reading-label"><span class="dot warsh-dot"></span> البَزِّي</div>
+              أحمد بن محمد بن عبد الله بن أبي بزة — توفي ٢٥٠هـ بمكة
+            </div>
+            <div class="reading-box hafs-reading">
+              <div class="reading-label"><span class="dot hafs-dot"></span> قُنبُل</div>
+              محمد بن عبد الرحمن — من أهل بيت بمكة يعرفون بالقنابلة — توفي ٢٩١هـ
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">٣</div> أبو عمرو البصري وراوياه</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="narrator-row"><span class="narrator-label">الاسم:</span> أبو عمرو بن العلاء البصري — قيل اسمه يحيى — ولد بمكة ٦٨هـ وتوفي ١٥٤هـ</div>
+          <div class="reading-row">
+            <div class="reading-box warsh-reading">
+              <div class="reading-label"><span class="dot warsh-dot"></span> الدُّوري</div>
+              أبو عمر حفص بن عمر بن عبد العزيز
+            </div>
+            <div class="reading-box hafs-reading">
+              <div class="reading-label"><span class="dot hafs-dot"></span> السُّوسي</div>
+              أبو شعيب صالح بن زياد السوسي
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">٤</div> ابن عامر الشامي وراوياه</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="narrator-row"><span class="narrator-label">الاسم:</span> أبو عمران عبد الله بن عامر اليحصبي القاضي الدمشقي</div>
+          <div class="reading-row">
+            <div class="reading-box warsh-reading">
+              <div class="reading-label"><span class="dot warsh-dot"></span> هشام</div>
+              هشام بن عمار بن نصير الدمشقي القاضي — توفي ٢٤٥هـ
+            </div>
+            <div class="reading-box hafs-reading">
+              <div class="reading-label"><span class="dot hafs-dot"></span> ابن ذكوان</div>
+              عبد الله بن أحمد بن ذكوان القرشي الدمشقي — توفي ٢٤٢هـ
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">٥</div> عاصم الكوفي وراوياه</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="narrator-row"><span class="narrator-label">الاسم:</span> عاصم بن بَهْدَلة أبي النجود الأسدي الكوفي — توفي ١٢٨هـ</div>
+          <div class="reading-row">
+            <div class="reading-box warsh-reading">
+              <div class="reading-label"><span class="dot warsh-dot"></span> شعبة</div>
+              أبو بكر شعبة بن عياش الكوفي — توفي ١٩٣هـ
+            </div>
+            <div class="reading-box hafs-reading">
+              <div class="reading-label"><span class="dot hafs-dot"></span> حفص ✦</div>
+              أبو عمر حفص بن سليمان الأسدي الكوفي — توفي ١٨٠هـ
+            </div>
+          </div>
+          <div class="rule-box">✦ رواية حفص هي الرواية الأوسع انتشاراً في العالم الإسلامي اليوم</div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">٦</div> حمزة الكوفي وراوياه</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="narrator-row"><span class="narrator-label">الاسم:</span> أبو عمارة حمزة بن حبيب الزيَّات الكوفي — توفي ١٥٦هـ</div>
+          <div class="reading-row">
+            <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> خَلَف</div>خلف بن هشام البزار — توفي ٢٢٩هـ</div>
+            <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> خَلَّاد</div>خلاد بن خالد — توفي ٢٢٠هـ</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">٧</div> الكسائي الكوفي وراوياه</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="narrator-row"><span class="narrator-label">الاسم:</span> أبو الحسن علي بن حمزة الكسائي — لُقِّب بالكسائي لأنه أحرم في كساء — توفي ١٨٩هـ</div>
+          <div class="reading-row">
+            <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> أبو الحارث</div>الليث بن خالد البغدادي — توفي ٢٤٠هـ</div>
+            <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> الدُّوري</div>أبو عمر حفص بن عمر الدوري</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">٨</div> أبو جعفر المدني وراوياه</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="reading-row">
+            <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ابن وردان</div>أبو الحارث عيسى بن وردان — توفي ١٦٠هـ</div>
+            <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> ابن جَمَّاز</div>أبو الربيع سليمان بن جَمَّاز المدني — توفي ١٧٠هـ</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">٩</div> يعقوب البصري وراوياه</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="narrator-row"><span class="narrator-label">الاسم:</span> أبو محمد يعقوب بن إسحاق الحضرمي البصري — توفي ٢٢٩هـ</div>
+          <div class="reading-row">
+            <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> رويس</div></div>
+            <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> رَوح</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">١٠</div> خلف البزَّار (العاشر) وراوياه</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="narrator-row"><span class="narrator-label">الاسم:</span> خلف بن هشام بن ثعلب — توفي ٢٢٩هـ</div>
+          <div class="reading-row">
+            <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> إسحاق</div>إسحاق بن إبراهيم الوراق أبو يعقوب — توفي ٢٨٦هـ</div>
+            <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> إدريس</div>أبو الحسن إدريس بن عبد الكريم البغدادي — توفي ٢٩٢هـ</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= USOOL SECTION ========= -->
+    <section id="usool" class="page-section">
+      <h1 class="section-title"><span class="icon">🎓</span> الفصل الثاني — الأصول</h1>
+      <div class="info-card gold-border">
+        <p>يشتمل هذا الفصل على تسعة مباحث تتناول الأصول العامة التي تختلف فيها رواية ورش عن رواية حفص في كيفية القراءة والأداء، بصرف النظر عن السورة أو الآية.</p>
+      </div>
+
+      <!-- Accordion 1 -->
+      <div class="accordion" id="acc-1">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">١</div> الاستعاذة والبسملة</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <h3 class="subsection-title">الاستعاذة</h3>
+          <div class="def-box">
+            <div class="def-card lang"><div class="def-label">الصيغة المختارة</div><div class="def-text" style="font-family:'Scheherazade New',serif;font-size:20px;">أعوذ بالله من الشيطان الرجيم</div></div>
+            <div class="def-card term"><div class="def-label">الدليل</div>
+            <div class="ayah-box" style="font-size:20px;">﴿ فَإِذَا قَرَأْتَ الْقُرْآنَ فَاسْتَعِذْ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ ﴾</div>
+            <div class="ayah-ref">[النحل: ٩٨]</div></div>
+          </div>
+          <table class="compare-table">
+            <tr><th class="th-topic">الحالة</th><th class="th-warsh">ورش</th><th class="th-hafs">حفص</th></tr>
+            <tr><td>التلاوة الجهرية</td><td class="warsh-cell">يجهر بها</td><td class="hafs-cell">يجهر بها</td></tr>
+            <tr><td>إذا كانت التلاوة سراً</td><td class="warsh-cell">يُسِرّ بها</td><td class="hafs-cell">يُسِرّ بها</td></tr>
+            <tr><td>داخل الصلاة</td><td class="warsh-cell">يُسِرّ بها سواء جهر أم أسرّ</td><td class="hafs-cell">نفس الحكم</td></tr>
+          </table>
+          <div class="rule-box"><strong>اتفاق:</strong> يتساوى الإمامان في صيغة الاستعاذة وأحكامها العامة.</div>
+
+          <h3 class="subsection-title">البسملة</h3>
+          <div class="ayah-box">﴿ بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ﴾</div>
+          <p style="margin:10px 0;font-size:15px;">قراءتها سنة عند افتتاح سور القرآن إلا سورة <strong>براءة (التوبة)</strong>. ويتساوى الحكم عند كلا الإمامين في ذلك.</p>
+
+          <h3 class="subsection-title">كيفية قراءة الاستعاذة مع البسملة — أربعة أوجه</h3>
+          <div class="summary-section">
+            <div class="summary-header">الأوجه الأربعة عند الابتداء بأول سورة</div>
+            <div class="summary-row">
+              <div class="r-num">١</div>
+              <div class="r-topic" style="grid-column:span 3">قطع الجميع: وقف على الاستعاذة ثم وقف على البسملة ثم ابتدأ بأول السورة</div>
+            </div>
+            <div class="summary-row">
+              <div class="r-num">٢</div>
+              <div class="r-topic" style="grid-column:span 3">قطع الأول ووصل الثاني بالثالث: وقف على الاستعاذة ووصل البسملة بأول السورة</div>
+            </div>
+            <div class="summary-row">
+              <div class="r-num">٣</div>
+              <div class="r-topic" style="grid-column:span 3">وصل الأول بالثاني وقطع الثالث: وصل الاستعاذة بالبسملة ثم وقف قبل السورة</div>
+            </div>
+            <div class="summary-row">
+              <div class="r-num">٤</div>
+              <div class="r-topic" style="grid-column:span 3">وصل الجميع: وصل الاستعاذة بالبسملة بأول السورة دون وقف</div>
+            </div>
+          </div>
+
+          <div class="rule-box">
+            <strong>الفصل بين الأنفال والتوبة:</strong> لكلا القارئين ثلاثة أوجه جائزة: الوقف على آخر الأنفال، والسكت، والوصل — ولا بسملة بينهما بالاتفاق.
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion 2 -->
+      <div class="accordion" id="acc-2">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">٢</div> هاء الكناية</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="info-card gold-border">
+            <p><strong>هاء الكناية:</strong> هي هاء الضمير التي يُكنى بها عن المفرد المذكر الغائب، والأصل فيها الضم.</p>
+            <p>إلا إذا سبقتها كسرة أو ياء ساكنة فإنها تُكسر حينئذٍ لتناسب ما قبلها.</p>
+          </div>
+          <div class="ayah-box">﴿ إِنَّهُ كَانَ ثَمُودُ ﴾ · ﴿ عَلَيْهِ اللَّهُ ﴾</div>
+
+          <h3 class="subsection-title">أحوال هاء الكناية</h3>
+          <table class="compare-table">
+            <tr><th class="th-topic">الحالة</th><th class="th-warsh">الحكم</th><th class="th-hafs">مثال</th></tr>
+            <tr><td>بين ساكنين</td><td class="warsh-cell">لا صلة — بالاتفاق</td><td><span class="ayah-small">يَحْسَبُهُ</span></td></tr>
+            <tr><td>بين ساكن وكسرة أو ياء</td><td class="warsh-cell">لا صلة — بالاتفاق</td><td><span class="ayah-small">مِنْهُ إِنَّ</span></td></tr>
+            <tr><td>بين متحركين</td><td class="warsh-cell">الصلة — إشباع حركة الهاء بمد</td><td><span class="ayah-small">إِنَّهُو كَانَ</span></td></tr>
+            <tr><td>بين متحرك وساكن</td><td class="warsh-cell">القصر — بالاتفاق</td><td><span class="ayah-small">مِنْهُ الْعَذَابُ</span></td></tr>
+          </table>
+
+          <h3 class="subsection-title">مواضع الاتفاق على الإشباع</h3>
+          <div class="info-card green-border">
+            <p>اتفق الإمامان على إشباع هاء الكناية في عدد من الكلمات، منها:</p>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;">
+              <span class="ayah-small">يُؤَدِّهِ</span>
+              <span class="ayah-small">نُصْلِهِ</span>
+              <span class="ayah-small">نُؤْتِهِ</span>
+              <span class="ayah-small">يَرَهُ</span>
+              <span class="ayah-small">يَرَهُ مَّ</span>
+              <span class="ayah-small">فِيهِ مُهَاناً</span>
+              <span class="ayah-small">إِنَّهُ كَانَ</span>
+            </div>
+          </div>
+
+          <h3 class="subsection-title">مواضع الاختلاف بين الروايتين</h3>
+          <div class="diff-item">
+            <div class="diff-num">الموضع الأول</div>
+            <div class="ayah-box">﴿ فَأَلْقِهْ إِلَيْهِمْ ﴾ — [النمل: ٢٨]</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">إشباع الهاء: فأَلْقِهِيْ إِليهم</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">إسكان الهاء وقفاً ووصلاً: فأَلْقِهْ</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الموضع الثاني</div>
+            <div class="ayah-box">﴿ وَيَتَّقْهِ ﴾ — [النور: ٥٢]</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">إشباع كسرة الهاء: وَيَتَّقِهِي</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">إسكان القاف والتماس كسرة الهاء: وَيَتَّقِهِ</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الموضع الثالث</div>
+            <div class="ayah-box">﴿ يَرْضَهُ ﴾ — [الزمر: ٧]</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">قرأها الروايان بالتماس ضمة الهاء (قصر)</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">نفس الحكم — التماس ضمة الهاء</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion 3 -->
+      <div class="accordion" id="acc-3">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">٣</div> أحكام الإظهار والإدغام</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="def-box">
+            <div class="def-card lang"><div class="def-label">الإظهار — لغةً</div><div class="def-text">البيان والوضوح</div></div>
+            <div class="def-card term"><div class="def-label">الإظهار — اصطلاحاً</div><div class="def-text">إخراج كل حرف من مخرجه بلا غنة في الحرف الظاهَر</div></div>
+            <div class="def-card lang"><div class="def-label">الإدغام — لغةً</div><div class="def-text">إدخال الشيء في الشيء</div></div>
+            <div class="def-card term"><div class="def-label">الإدغام — اصطلاحاً</div><div class="def-text">النطق بالحرفين كحرف واحد مشدَّد — منه ما هو بغنة ومنه ما هو بغير غنة</div></div>
+          </div>
+
+          <h3 class="subsection-title">أقسام الإدغام</h3>
+          <div class="summary-section">
+            <div class="summary-header">تقسيم الإدغام من حيث المخارج والصفات</div>
+            <div class="summary-row">
+              <div class="r-num"></div>
+              <div class="r-topic">المتماثلان</div>
+              <div class="r-warsh" style="grid-column:span 2">حرفان اتفقا في المخرج والصفات — كالنونين والميمين والواوين</div>
+            </div>
+            <div class="summary-row">
+              <div class="r-num"></div>
+              <div class="r-topic">المتجانسان</div>
+              <div class="r-warsh" style="grid-column:span 2">حرفان اتفقا في المخرج واختلفا في الصفات — كالتاء والدال، والطاء والتاء</div>
+            </div>
+            <div class="summary-row">
+              <div class="r-num"></div>
+              <div class="r-topic">المتقاربان</div>
+              <div class="r-warsh" style="grid-column:span 2">حرفان تقاربا في المخرج أو الصفات — كالنون مع اللام والراء</div>
+            </div>
+          </div>
+
+          <h3 class="subsection-title">أحكام النون الساكنة والتنوين</h3>
+          <table class="compare-table">
+            <tr><th class="th-topic">الحكم</th><th class="th-warsh">حروفه</th><th class="th-hafs">ملاحظة</th></tr>
+            <tr><td>الإظهار</td><td class="warsh-cell">أ هـ ع ح غ خ (الحلقية)</td><td>بالاتفاق عند كلا الإمامين</td></tr>
+            <tr><td>الإدغام بغنة</td><td class="warsh-cell">ي و م ن (ينمو)</td><td>بالاتفاق</td></tr>
+            <tr><td>الإدغام بلا غنة</td><td class="warsh-cell">ل ر</td><td>بالاتفاق</td></tr>
+            <tr><td>الإخفاء</td><td class="warsh-cell">١٥ حرفاً (صف ذا ثنا كم جاد شخص قد سما دم طيباً زد في تقى ظل)</td><td>بالاتفاق</td></tr>
+            <tr><td>الإقلاب</td><td class="warsh-cell">الباء فقط</td><td>بالاتفاق</td></tr>
+          </table>
+
+          <h3 class="subsection-title">مواضع الاختلاف بين الروايتين في الإدغام</h3>
+          <div class="diff-item">
+            <div class="diff-num">الباء مع الميم</div>
+            <div class="ayah-box">﴿ يُعَذِّبُ مَنْ يَشَاءُ ﴾ — [هود: ٤٢]</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div>يُظهر الباء ولا يُسكنها</div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div>يُظهر كذلك مطلقاً</div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الدال مع غير التاء (الضاد والظاء)</div>
+            <div class="ayah-box">﴿ لَقَدْ ظَلَمَكَ ﴾ — [ص: ٢٤]</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div>يُدغم الدال في الضاد والظاء</div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div>يُظهر مطلقاً</div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الذال مع التاء — (أخذت)</div>
+            <div class="ayah-box">﴿ أَخَذْتَ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div>يُدغم الذال في التاء في كل لفظ جاء من مادة (أخذ)</div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div>يُظهر الذال دائماً</div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الإدغام الكبير (أَمِنتُم، تَأمرونني)</div>
+            <div class="ayah-box">﴿ أَمِنتُمْ ﴾ · ﴿ تَأْمُرُونِّي ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div>إدغام كبير وجوبي في هاتين الكلمتين</div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div>يختلف: يُدغم في (أمِنتم) ويظهر في (تأمرونني)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion 4 -->
+      <div class="accordion" id="acc-4">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">٤</div> أحكام المد والقصر</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="def-box">
+            <div class="def-card lang"><div class="def-label">المد — لغةً</div>الزيادة والبسط والإطالة</div>
+            <div class="def-card term"><div class="def-label">المد — اصطلاحاً</div>زيادة في زمن النطق بحرف المد لسبب معين</div>
+            <div class="def-card lang"><div class="def-label">القصر — لغةً</div>الحبس والإمساك</div>
+            <div class="def-card term"><div class="def-label">القصر — اصطلاحاً</div>عدم الزيادة على القدر الطبيعي (حركتان)</div>
+          </div>
+
+          <h3 class="subsection-title">حروف المد</h3>
+          <div class="letter-grid">
+            <div class="letter-box">ا</div>
+            <div class="letter-box">و</div>
+            <div class="letter-box">ي</div>
+          </div>
+          <div class="note">الواو الساكنة المضموم ما قبلها — الياء الساكنة المكسور ما قبلها — الألف ولا يكون قبلها إلا مفتوح</div>
+
+          <h3 class="subsection-title">أنواع المد الرئيسية</h3>
+          <table class="compare-table">
+            <tr><th class="th-topic">النوع</th><th class="th-warsh">ورش (الأزرق)</th><th class="th-hafs">حفص</th></tr>
+            <tr><td>المد الطبيعي/الأصلي</td><td class="warsh-cell">حركتان — بالاتفاق</td><td class="hafs-cell">حركتان — بالاتفاق</td></tr>
+            <tr><td>مد البدل</td><td class="warsh-cell">يمده <strong>٦ حركات</strong> (إشباع)</td><td class="hafs-cell">يقصره: <strong>حركتان</strong> فقط</td></tr>
+            <tr><td>المد المتصل</td><td class="warsh-cell">٤-٦ حركات</td><td class="hafs-cell">٤-٥ حركات</td></tr>
+            <tr><td>المد المنفصل</td><td class="warsh-cell">٤-٦ حركات (الأزرق)</td><td class="hafs-cell">٤-٥ حركات</td></tr>
+            <tr><td>مد الصلة الكبرى</td><td class="warsh-cell">٦ حركات — خاص بورش</td><td class="hafs-cell">٤-٢ حركات فقط</td></tr>
+            <tr><td>مد الميم الجمع</td><td class="warsh-cell">مد الميم إشباعاً (خاص بورش)</td><td class="hafs-cell">لا مد لميم الجمع</td></tr>
+            <tr><td>المثقل الحرفي</td><td class="warsh-cell">٦ حركات — بالاتفاق</td><td class="hafs-cell">٦ حركات — بالاتفاق</td></tr>
+            <tr><td>المخفف الكلمي</td><td class="warsh-cell">٦ حركات — لكلاهما</td><td class="hafs-cell">٦ حركات، لكنه نادر عند حفص</td></tr>
+          </table>
+
+          <div class="rule-box">
+            <strong>مد البدل:</strong> هو ما قُدِّمت فيه الهمزة على حرف المد مثل: (آمَنوا، أُوتوا، إيماناً). ورش من طريق الأزرق يمده ٦ حركات، بينما حفص يقصره ٢ حركات فقط — وهذا من أبرز الفروق بين الروايتين.
+          </div>
+
+          <h3 class="subsection-title">مد الصلة الكبرى — خاص بورش</h3>
+          <div class="info-card green-border">
+            <p>مد الصلة الكبرى هو مد ضمة هاء الضمير أو كسرتها إذا جاء بعدها همزة قطع متحركة. ورش يمده ٦ حركات من طريق الأزرق، وحفص لا يمده إلا ٤-٢ حركات.</p>
+            <div class="ayah-box">﴿ عِنْدَهُ أَجْرٌ ﴾ · ﴿ إِنَّهُو كَانَ ﴾</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion 5 -->
+      <div class="accordion" id="acc-5">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">٥</div> أحكام الهمزات</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="info-card gold-border">
+            <p>من أبرز الفروق بين الروايتين في باب الهمزات أن ورشاً يملك خصيصة (النقل) التي تميزه عن سائر القراء.</p>
+          </div>
+
+          <h3 class="subsection-title">طرق تخفيف الهمزة عند ورش</h3>
+          <div class="accordion">
+            <button class="accordion-btn" onclick="toggleAcc(this)" style="font-size:14px;">
+              <span>١ · التسهيل (الهمز بين بين)</span><span class="accordion-arrow">▼</span>
+            </button>
+            <div class="accordion-content">
+              <p>تسهيل الهمزة الثانية من (أَرَأَيتَ) و(هَاؤُم) — يُسهَّل النطق بجعل الهمزة بين الهمزة وحرف المد.</p>
+              <div class="reading-row">
+                <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div>يُسهِّل الهمزة الثانية في (أَرَأَيتَ) وفي (هَأَنتُم)</div>
+                <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div>يُحقق الهمزة في الغالب</div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <button class="accordion-btn" onclick="toggleAcc(this)" style="font-size:14px;">
+              <span>٢ · الحذف (حذف الهمزة)</span><span class="accordion-arrow">▼</span>
+            </button>
+            <div class="accordion-content">
+              <p>يحذف ورش همزة (الَّلائي) في مواضع عدة: (الأحزاب، المجادلة، الطلاق في موضعين) فتُقرأ: (اللَّاي).</p>
+              <div class="reading-row">
+                <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">اللَّاي</div></div>
+                <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">اللَّائِي</div></div>
+              </div>
+              <p style="margin-top:8px;">كذلك: همزة (يَهَؤُوا) في التوبة، يُحققها مصاعم وحده، وبقية القراء يحذفونها فيُقرأ: (يُهاضي).</p>
+            </div>
+          </div>
+          <div class="accordion">
+            <button class="accordion-btn" onclick="toggleAcc(this)" style="font-size:14px;">
+              <span>٣ · النقل — خاصية ورش المميزة</span><span class="accordion-arrow">▼</span>
+            </button>
+            <div class="accordion-content">
+              <div class="rule-box"><strong>النقل:</strong> إلقاء حركة الهمزة المفردة المتحركة على الحرف الساكن قبلها، مع حذف الهمزة. ويختص بها ورش دون غيره.</div>
+              <div class="ayah-box">﴿ قَدِ افْتَرَىٰ ﴾ تُقرأ عند ورش: قَدَ فْتَرَى</div>
+              <div class="ayah-box">﴿ بِمَا أَنزَلَ ﴾ تُقرأ عند ورش: بِمَنزَلَ</div>
+              <div class="reading-row">
+                <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش — بالنقل</div>تُنقل حركة الهمزة إلى الساكن قبلها وتُحذف الهمزة</div>
+                <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص — بالتحقيق</div>تُحقق الهمزة في موضعها دون نقل</div>
+              </div>
+              <div class="note">شرط النقل: أن يكون الساكن قبل الهمزة في آخر كلمة والهمزة أول الكلمة التالية، وألا يكون الساكن حرف مد.</div>
+            </div>
+          </div>
+
+          <h3 class="subsection-title">همزة الوصل ومواضعها</h3>
+          <div class="info-card">
+            <p>همزة الوصل لا تُلفظ إلا في حال الابتداء. مواضعها المعروفة:</p>
+            <div style="font-size:14px; line-height:2.2;">
+              ١. لفظ الجلالة (الله) · ٢. في (أل) التعريف · ٣. في الأسماء الموصولة (الذي، التي...) · ٤. في أسماء بعينها: (ابن، ابنة، امرؤ، امرأة، اثنان، اثنتان، اسم) · ٥. في صيغة الماضي للأفعال الخماسية والسداسية · ٦. في صيغة الأمر من الفعل الثلاثي إذا كان ثاني مضارعه ساكناً
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion 6 -->
+      <div class="accordion" id="acc-6">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">٦</div> التفخيم والترقيق</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="def-box">
+            <div class="def-card lang"><div class="def-label">التفخيم — لغةً</div>التسمين والتغليظ والتكثير والتعظيم</div>
+            <div class="def-card term"><div class="def-label">التفخيم — اصطلاحاً</div>تسمين يدخل على الحرف فيملأ الفم بصداه</div>
+            <div class="def-card lang"><div class="def-label">الترقيق — لغةً</div>معناه التنحيل والتحليل</div>
+            <div class="def-card term"><div class="def-label">الترقيق — اصطلاحاً</div>نحول يدخل على الحرف فلا يملأ الفم بصداه</div>
+          </div>
+
+          <h3 class="subsection-title">أقسام حروف الهجاء من حيث التفخيم والترقيق</h3>
+          <table class="compare-table">
+            <tr><th class="th-topic" style="width:30%">القسم</th><th class="th-warsh" style="width:35%">الحروف</th><th class="th-hafs" style="width:35%">ملاحظة</th></tr>
+            <tr><td>مفخمة دائماً</td><td class="warsh-cell">ص خ ض غ ط ق ظ (صخضغطقظ)</td><td>بالاتفاق</td></tr>
+            <tr><td>مرققة دائماً</td><td class="warsh-cell">جميع حروف الاستفال عدا الألف واللام والراء</td><td>بالاتفاق</td></tr>
+            <tr><td>مختلف فيها</td><td class="warsh-cell">الألف — اللام — الراء</td><td>هنا يكون الخلاف بين الروايتين</td></tr>
+          </table>
+
+          <h3 class="subsection-title">الراء عند الروايتين</h3>
+          <div class="info-card green-border">
+            <p>يتفق الإمامان على ترقيق الراء المكسورة. أما الخلاف فيكون في الراء المفتوحة والمضمومة والساكنة.</p>
+            <p><strong>ورش:</strong> يُرقق الراء المفتوحة إذا كان قبلها كسر أصلي وليس بعدها حرف استعلاء في نفس الكلمة — وهذا يسمى الإمالة أو الترقيق.</p>
+            <p><strong>حفص:</strong> الأصل عنده الفتح (التفخيم) في الراء المفتوحة، ويُرقق فقط في كلمة (هار) في سورة التوبة.</p>
+          </div>
+
+          <h3 class="subsection-title">لفظ الجلالة (الله)</h3>
+          <table class="compare-table">
+            <tr><th class="th-topic">ما قبل الجلالة</th><th class="th-warsh">ورش</th><th class="th-hafs">حفص</th></tr>
+            <tr><td>مفتوح أو مضموم</td><td class="warsh-cell">تفخيم</td><td class="hafs-cell">تفخيم</td></tr>
+            <tr><td>مكسور</td><td class="warsh-cell">ترقيق</td><td class="hafs-cell">ترقيق</td></tr>
+          </table>
+          <div class="note">يتفق الإمامان في لفظ الجلالة تفخيماً وترقيقاً.</div>
+        </div>
+      </div>
+
+      <!-- Accordion 7 -->
+      <div class="accordion" id="acc-7">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">٧</div> الفتح والإمالة</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="def-box">
+            <div class="def-card lang"><div class="def-label">الفتح — اصطلاحاً</div>النطق بالألف أو الفتحة بدون ميل نحو الكسر — وهو الأصل</div>
+            <div class="def-card term"><div class="def-label">الإمالة — اصطلاحاً</div>الميل بالفتحة نحو الكسرة وبالألف نحو الياء</div>
+          </div>
+
+          <h3 class="subsection-title">الإمالة عند ورش وحفص</h3>
+          <table class="compare-table">
+            <tr><th class="th-topic">النوع</th><th class="th-warsh">ورش</th><th class="th-hafs">حفص</th></tr>
+            <tr><td>الإمالة الكبرى (محضة)</td><td class="warsh-cell">لا إمالة كبرى له من طريق الأزرق</td><td class="hafs-cell">لا إمالة كبرى إلا في (مَجراها) [هود:٤١]</td></tr>
+            <tr><td>الإمالة الصغرى (التقليل)</td><td class="warsh-cell">كثير جداً — في الأسماء والأفعال المقصورة وغيرها</td><td class="hafs-cell">لا تقليل له مطلقاً</td></tr>
+          </table>
+
+          <h3 class="subsection-title">مواضع تقليل ورش (الإمالة الصغرى)</h3>
+          <div class="info-card green-border">
+            <p>يُقلِّل ورش من طريق الأزرق — أي يُميل إمالةً صغرى — في المواضع التالية:</p>
+            <div style="font-size:14.5px; line-height:2.5;">
+              ١. الألف المتطرفة في الأسماء مثل: <span class="ayah-small">الهُدى</span> <span class="ayah-small">التَّقوى</span> <span class="ayah-small">الدُّنيا</span><br>
+              ٢. الألف المتطرفة في الأفعال مثل: <span class="ayah-small">رَمى</span> <span class="ayah-small">عَسى</span><br>
+              ٣. الأسماء التي رُسمت بالياء وتُلفظ بالألف مثل: <span class="ayah-small">الأقصى</span> <span class="ayah-small">اليتامى</span><br>
+              ٤. الألف قبل الراء المتطرفة في كلمة: <span class="ayah-small">مَكَارَ</span>
+            </div>
+          </div>
+
+          <div class="rule-box">
+            <strong>التقليل المقدَّم:</strong> عند ورش من طريق الأزرق، التقليل هو المقدَّم في بعض المواضع على الفتح، كلفظ (مكرهم) في سورة النمل.
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion 8 -->
+      <div class="accordion" id="acc-8">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">٨</div> الوقف والقطع والسكت</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="def-box">
+            <div class="def-card lang"><div class="def-label">الوقف — اصطلاحاً</div>قطع الصوت عند آخر الكلمة زمناً يُتنفَّس فيه عادةً مع نية استئناف القراءة</div>
+            <div class="def-card term"><div class="def-label">القطع — اصطلاحاً</div>إنهاء القراءة بنية عدم الاستئناف — كنهاية وِرد يومي</div>
+          </div>
+
+          <h3 class="subsection-title">أحكام مشتركة بين الروايتين</h3>
+          <div class="rule-box">أحكام الوقف والابتداء والقطع لا يختلف حولها القراء، إنما يختلفان في حكم السكت.
+          </div>
+
+          <h3 class="subsection-title">السكت — الفرق الجوهري</h3>
+          <div class="def-box">
+            <div class="def-card lang"><div class="def-label">السكت — اصطلاحاً</div>قطع الصوت زمناً يسيراً (حركتين) بغير تنفس ثم مواصلة القراءة</div>
+            <div class="def-card term"><div class="def-label">الشرط</div>لا يكون إلا على ساكن</div>
+          </div>
+          <table class="compare-table">
+            <tr><th class="th-topic">الراوي</th><th class="th-warsh" style="width:45%">الحكم</th><th class="th-hafs" style="width:45%">مواضع السكت</th></tr>
+            <tr><td>ورش</td><td class="warsh-cell">لا سكت له مطلقاً — ليس من أصوله</td><td>—</td></tr>
+            <tr><td>حفص</td><td class="hafs-cell">السكت واجب في ٤ مواضع</td><td>
+              ١. <span class="ayah-small">مَرْقَدِنَا</span> [يس:٥٢]<br>
+              ٢. <span class="ayah-small">مَنْ رَاقٍ</span> [القيامة:٢٧]<br>
+              ٣. <span class="ayah-small">بَلْ رَانَ</span> [المطففين:١٤]<br>
+              ٤. <span class="ayah-small">عِوَجاً قَيِّماً</span> [الكهف:١-٢]
+            </td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- Accordion 9 -->
+      <div class="accordion" id="acc-9">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;"><div class="accordion-num">٩</div> ياءات الإضافة وياءات الزوائد</div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="def-box">
+            <div class="def-card lang"><div class="def-label">ياء الإضافة</div>ياء المتكلم المضاف إليها الاسم التي قبلها كسرة أو ساكن</div>
+            <div class="def-card term"><div class="def-label">ياء الزوائد</div>ياء تثبت في الرسم في بعض المصاحف وتُحذف في بعضها الآخر</div>
+          </div>
+
+          <h3 class="subsection-title">ياءات الإضافة</h3>
+          <table class="compare-table">
+            <tr><th class="th-topic">الكلمة</th><th class="th-warsh">ورش</th><th class="th-hafs">حفص</th><th style="background:#555;color:white;padding:12px 16px;">السورة</th></tr>
+            <tr><td><span class="ayah-small">إِنِّي</span></td><td class="warsh-cell">فتح الياء: إِنِّيَ</td><td class="hafs-cell">إسكان الياء: إِنِّي</td><td>مواضع كثيرة</td></tr>
+            <tr><td><span class="ayah-small">مَعِيَ</span></td><td class="warsh-cell">فتح الياء دائماً</td><td class="hafs-cell">إسكان الياء</td><td>—</td></tr>
+            <tr><td><span class="ayah-small">رَبِّيَ</span></td><td class="warsh-cell">فتح الياء في الغالب</td><td class="hafs-cell">إسكان الياء في الغالب</td><td>—</td></tr>
+          </table>
+          <div class="rule-box">
+            <strong>القاعدة العامة:</strong> ورش يفتح ياءات الإضافة في مواضع كثيرة يُسكنها فيها حفص. وهذا من الفروق الظاهرة بين الروايتين ويُلاحظه القارئ بسهولة عند المقارنة.
+          </div>
+
+          <h3 class="subsection-title">ياءات الزوائد</h3>
+          <div class="info-card">
+            <p>هي ياءات محذوفة رسماً في بعض المصاحف ومثبتة في بعضها الآخر، ويجوز قراءتها بالإثبات والحذف وصلاً، أما وقفاً فالحذف.</p>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div>يثبت كثيراً من ياءات الزوائد وصلاً ووقفاً أو وصلاً فقط</div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div>يحذفها في الغالب</div>
+            </div>
+            <div style="margin-top: 12px;">
+              <strong>أمثلة على ياءات الزوائد:</strong>
+              <span class="ayah-small">وَاتَّقُونِي</span> <span class="ayah-small">فَاتَّبِعُونِي</span> <span class="ayah-small">وَلاَ تَرْهَبُونِي</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= FURUSH SECTION ========= -->
+    <section id="furush" class="page-section">
+      <h1 class="section-title"><span class="icon">📚</span> الفصل الثالث — الفروش (الفروق السورية)</h1>
+      <div class="info-card gold-border">
+        <p>هذا الفصل هو المحور الرئيسي للكتاب، ويعرض الفروق المفصَّلة آية آية بين ورش وحفص في كل سورة من سور القرآن الكريم. فيما يلي عرض لأبرز الفروق في أوائل السور.</p>
+      </div>
+
+      <!-- Baqara -->
+      <div class="accordion" id="s-baqara">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div class="surah-num-badge">٢</div>
+            سورة البقرة — أبرز الفروق
+          </div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="diff-item">
+            <div class="diff-num">الآية ٢٠٨ · السِّلم / السَّلم</div>
+            <div class="ayah-box">﴿ ادْخُلُوا فِي السِّلْمِ كَافَّةً ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">السَّلْمِ — بفتح السين المشددة</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">السِّلْمِ — بكسر السين المشددة</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ٢٠٨ · خُطُوَات / خُطْوَات</div>
+            <div class="ayah-box">﴿ وَلَا تَتَّبِعُوا خُطُوَاتِ الشَّيْطَانِ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">خُطْوَات — بإسكان الطاء</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">خُطُوَات — بضم الطاء</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ٢١٤ · حتى يقولَ / حتى يقولُ</div>
+            <div class="ayah-box">﴿ حَتَّى يَقُولَ الرَّسُولُ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">يقولُ — برفع اللام</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">يقولَ — بنصب اللام</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ٢٤٥ · يُضَاعَفه / يُضَاعِفه</div>
+            <div class="ayah-box">﴿ فَيُضَاعِفَهُ لَهُ أَضْعَافاً ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">فيُضَاعَفُه — بضمة على الفاء</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">فيُضَاعِفَه — بفتحة على الفاء</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ٢٤٥ · يبصط / يبسط</div>
+            <div class="ayah-box">﴿ وَاللَّهُ يَقْبِضُ وَيَبْسُطُ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">ويبصط — بالصاد فقط</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">ويبسط — بالسين والصاد معاً</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ٢٥٩ · نُنشِرها / نُنشُزها</div>
+            <div class="ayah-box">﴿ وَانظُرْ إِلَى الْعِظَامِ كَيْفَ نُنشِزُهَا ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">نُنشِرها — بالراء المهملة المضمومة (من النشور)</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">نُنشِزها — بالزاي المعجمة المضمومة (من النشوز)</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ٢٦٥ · بِرَبْوة / بِرَبْوَة</div>
+            <div class="ayah-box">﴿ كَمَثَلِ جَنَّةٍ بِرَبْوَةٍ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">بِرُبوةٍ — بضم الراء</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">بِرَبوةٍ — بفتح الراء</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ٢٨٠ · مَيْسَرَة / مَيْسُرَة</div>
+            <div class="ayah-box">﴿ فَنَظِرَةٌ إِلَىٰ مَيْسَرَةٍ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">مَيْسُرَةٍ — بضم السين</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">مَيْسَرَةٍ — بفتح السين</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ٢٨٢ · تِجَارَةٌ حَاضِرَة (الرفع والنصب)</div>
+            <div class="ayah-box">﴿ إِلَّا أَن تَكُونَ تِجَارَةً حَاضِرَةً ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">تِجَارَةٌ حَاضِرَةٌ — برفع الاسمين</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">تِجَارَةً حَاضِرَةً — بنصب الاسمين</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Al Imran -->
+      <div class="accordion" id="s-al-imran">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div class="surah-num-badge">٣</div>
+            سورة آل عمران — أبرز الفروق
+          </div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="diff-item">
+            <div class="diff-num">الآية ١٣ · تَرَوْنَهم / يَرَوْنَهم</div>
+            <div class="ayah-box">﴿ يَرَوْنَهُم مِّثْلَيْهِمْ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">تَرَوْنَهم — بتاء الخطاب</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">يَرَوْنَهم — بياء الغيب</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ٣٥ · مِنِّي / مِنِّيَ</div>
+            <div class="ayah-box">﴿ إِنِّي نَذَرْتُ لَكَ مَا فِي بَطْنِي ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">مِنِّيَ — بفتح ياء الإضافة</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">مِنِّي — بإسكان ياء الإضافة</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ٩٧ · حِجُّ / حَجُّ البيت</div>
+            <div class="ayah-box">﴿ وَلِلَّهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">حَجُّ — بفتح الحاء</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">حِجُّ — بكسر الحاء</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ٤٩ · طَيْراً / طَيَراً</div>
+            <div class="ayah-box">﴿ أَنِّي أَخْلُقُ لَكُم مِّنَ الطِّينِ كَهَيْئَةِ الطَّيْرِ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">طَائِراً — بالفاء والهمزة بعد الطاء</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">طَيراً — بياء ساكنة بعد الطاء بلا ألف</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nisa -->
+      <div class="accordion" id="s-nisa">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div class="surah-num-badge">٤</div>
+            سورة النساء — أبرز الفروق
+          </div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="diff-item">
+            <div class="diff-num">الآية ١ · تَسَّاءلون / تَسَاءلون</div>
+            <div class="ayah-box">﴿ الَّذِي تَسَاءَلُونَ بِهِ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">تَسَّاءلون — بتشديد السين المفتوحة</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">تَسَاءلون — بتخفيف السين المفتوحة</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ٥ · قِيَاما / قِياماً</div>
+            <div class="ayah-box">﴿ لَا تُؤْتُوا السُّفَهَاءَ أَمْوَالَكُمُ الَّتِي جَعَلَ اللَّهُ لَكُمْ قِيَامًا ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">قِيَاماً — بحذف الألف بعد الياء المفتوحة</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">قِيَاماً — بإثبات الألف بعد الياء المفتوحة</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ١١ · وَاحِدَةٌ / وَاحِدَةً</div>
+            <div class="ayah-box">﴿ فَإِن كَانَتْ وَاحِدَةً فَلَهَا النِّصْفُ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">وَاحِدَةٌ — بالرفع (ضمتان)</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">وَاحِدَةً — بالنصب (فتحتان)</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ٩٤ · السَّلَمَ / السَّلامَ</div>
+            <div class="ayah-box">﴿ وَلَا تَقُولُوا لِمَنْ أَلْقَىٰ إِلَيْكُمُ السَّلَامَ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">السَّلَمَ — بلا ألف بعد اللام</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">السَّلامَ — بإثبات الألف بعد اللام</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maida -->
+      <div class="accordion" id="s-maida">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div class="surah-num-badge">٥</div>
+            سورة المائدة — أبرز الفروق
+          </div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="diff-item">
+            <div class="diff-num">الآية ٢٨-٢٩ · إِنِّيَ / إِنِّي</div>
+            <div class="ayah-box">﴿ إِنِّي أَخَافُ اللَّهَ رَبَّ الْعَالَمِينَ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">إِنِّيَ — بفتح الياء في الآيتين</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">إِنِّي — بإسكان الياء في الآيتين</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ٤١ · يُحْزِنك / يَحْزُنك</div>
+            <div class="ayah-box">﴿ لَا يَحْزُنكَ الَّذِينَ يُسَارِعُونَ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">يُحزِنك — بضم الياء وكسر الزاي</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">يَحزُنك — بفتح الياء وضم الزاي</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ٩٥ · فَجَزَاءٌ مِّثلُ / فَجَزَاءُ مِّثلِ</div>
+            <div class="ayah-box">﴿ فَجَزَاءٌ مِّثْلُ مَا قَتَلَ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">فَجَزَاءٌ مِثلُ — برفع (جزاء) بضمتين وجرّ (مثل) بكسرة</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">فَجَزَاءُ مِثلِ — برفع (جزاء) بضمة مفردة ورفع (مثل) بضمة</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anam -->
+      <div class="accordion" id="s-anam">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div class="surah-num-badge">٦</div>
+            سورة الأنعام — أبرز الفروق
+          </div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="diff-item">
+            <div class="diff-num">الآية ٢٧ · نُكَذِّبَ / نُكَذِّبُ · نَكونَ / نَكونُ</div>
+            <div class="ayah-box">﴿ وَلَا نُكَذِّبَ بِآيَاتِ رَبِّنَا وَنَكُونَ مِنَ الْمُؤْمِنِينَ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">نُكَذِّبُ ونَكونُ — برفع النون فيهما</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">نُكَذِّبَ ونَكونَ — بنصب النون فيهما</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ٦٣ · أنجَيتَنا / أنجانا</div>
+            <div class="ayah-box">﴿ لَئِنْ أَنجَانَا مِنْ هَٰذِهِ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">أَنجَيتَنا — بياء ساكنة بعد الجيم على الخطاب</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">أَنجانا — بألف بعد الجيم على الغيب</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ١٢٤ · رِسَالته / رِسَالاته</div>
+            <div class="ayah-box">﴿ حَيْثُ يَجْعَلُ رِسَالَاتِهِ ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">رِسَالاتِهِ — بالجمع مع كسر التاء والهاء</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">رِسَالتَه — بالإفراد مع فتح التاء وضم الهاء</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Araf -->
+      <div class="accordion" id="s-araf">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div class="surah-num-badge">٧</div>
+            سورة الأعراف — أبرز الفروق
+          </div>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          <div class="diff-item">
+            <div class="diff-num">الآية ٢٦ · لِبَاسٌ / لِبَاساً</div>
+            <div class="ayah-box">﴿ يَا بَنِي آدَمَ قَدْ أَنزَلْنَا عَلَيْكُمْ لِبَاسًا ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">لِبَاسٌ — بالرفع</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">لِبَاساً — بالنصب</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ٥٧ · نُشُراً / بُشراً</div>
+            <div class="ayah-box">﴿ وَهُوَ الَّذِي يُرْسِلُ الرِّيَاحَ بُشْرًا ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">نُشُراً — جمع نَشور بضم النون والشين (من النشور)</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">بُشراً — بإسكان الشين وضم الباء (من البشارة)</div></div>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">الآية ١٤٤ · بِرِسَالاتي / بِرِسَالتي</div>
+            <div class="ayah-box">﴿ إِنِّي اصْطَفَيْتُكَ عَلَى النَّاسِ بِرِسَالَاتِي ﴾</div>
+            <div class="reading-row">
+              <div class="reading-box warsh-reading"><div class="reading-label"><span class="dot warsh-dot"></span> ورش</div><div class="reading-text">بِرِسَالاتي — بالجمع بلا ألف بعد اللام</div></div>
+              <div class="reading-box hafs-reading"><div class="reading-label"><span class="dot hafs-dot"></span> حفص</div><div class="reading-text">بِرِسَالاتي — بالجمع مع إثبات الألف</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rule-box" style="margin-top:24px;">
+        <strong>ملاحظة:</strong> الكتاب يواصل سرد الفروق سورة سورة حتى نهاية القرآن الكريم. وقد عُرض هنا أبرز الفروق في السور الأولى كنموذج للمنهج المتبع في الكتاب. يُنصح القارئ بالرجوع إلى الكتاب الأصلي لمزيد من التفاصيل.
+      </div>
+    </section>
+
+    <div class="content-footer">
+      <p>دليل تعليمي تفاعلي مبني على كتاب: <strong>وجوه الاتفاق والاختلاف بين روايتي ورش وحفص (من طريق الطيبة)</strong></p>
+      <p style="margin-top:6px;">﴿ وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ ﴾</p>
+    </div>
+
+  </main>
+</div>
+
+<script>
+// ======= Navigation =======
+function showSection(id, navBtn, sidebarBtn) {
+  document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.sidebar-link').forEach(b => b.classList.remove('active'));
+
+  if (navBtn) navBtn.classList.add('active');
+  if (sidebarBtn) sidebarBtn.classList.add('active');
+
+  // Map section to nav button
+  const navMap = {
+    'intro': 0, 'narrator': 1, 'qurra': 1, 'usool': 3, 'furush': 4
+  };
+  const navBtns = document.querySelectorAll('.nav-btn');
+  if (navMap[id] !== undefined) navBtns[navMap[id]]?.classList.add('active');
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ======= Accordion =======
+function toggleAcc(btn) {
+  const content = btn.nextElementSibling;
+  const isOpen = btn.classList.contains('open');
+
+  btn.classList.toggle('open', !isOpen);
+  content.classList.toggle('open', !isOpen);
+}
+
+function openAccordion(id) {
+  setTimeout(() => {
+    const acc = document.getElementById(id);
+    if (acc) {
+      const btn = acc.querySelector('.accordion-btn');
+      const content = acc.querySelector('.accordion-content');
+      if (btn && !btn.classList.contains('open')) {
+        btn.classList.add('open');
+        content.classList.add('open');
+      }
+      acc.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, 100);
+}
+
+// ======= Search =======
+function searchContent(e) {
+  if (e && e.key && e.key !== 'Enter') return;
+  const q = document.getElementById('searchInput').value.trim();
+  if (!q) { clearHighlights(); return; }
+
+  clearHighlights();
+  const sections = document.querySelectorAll('.page-section');
+  let found = false;
+  let firstSection = null;
+
+  sections.forEach(section => {
+    if (highlightInEl(section, q)) {
+      if (!firstSection) firstSection = section.id;
+      found = true;
+    }
+  });
+
+  if (firstSection) {
+    document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
+    document.getElementById(firstSection).classList.add('active');
+    setTimeout(() => {
+      const h = document.querySelector('.search-highlight');
+      if (h) h.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 100);
+  }
+}
+
+function highlightInEl(el, q) {
+  const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  let n;
+  while (n = walker.nextNode()) nodes.push(n);
+  let found = false;
+  nodes.forEach(node => {
+    if (node.nodeValue.includes(q)) {
+      const span = document.createElement('span');
+      span.innerHTML = node.nodeValue.replace(new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'), 'g'), `<mark class="search-highlight">$&</mark>`);
+      node.parentNode.replaceChild(span, node);
+      found = true;
+    }
+  });
+  return found;
+}
+
+function clearHighlights() {
+  document.querySelectorAll('.search-highlight').forEach(m => {
+    const parent = m.parentNode;
+    m.replaceWith(m.textContent);
+    parent.normalize();
+  });
+  // unwrap extra spans
+  document.querySelectorAll('span:not([class])').forEach(s => {
+    if (s.parentNode) { s.replaceWith(s.textContent); }
+  });
+}
+
+// init
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.nav-btn').classList.add('active');
+  document.querySelector('.sidebar-link').classList.add('active');
+});
+</script>
+</body>
+</html>
